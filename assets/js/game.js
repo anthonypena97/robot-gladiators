@@ -165,11 +165,11 @@ var randomNumber = function (min, max) {
 
 var playerInfo = {
 	name: window.prompt("What is your robot's name"),
-	health: 200,
+	health: 300,
 	attack: 10,
 	money: 10,
 	reset: function () {
-		this.health = 100;
+		this.health = 300;
 		this.money = 10;
 		this.attack = 10;
 	},
