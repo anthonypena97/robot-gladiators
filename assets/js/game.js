@@ -30,8 +30,8 @@ var fightOrSkip = function () {
 var fight = function (enemy) {
 	var isPlayerTurn = true;
 
-	if (Math.random() > 0.5) {
-		is playerTurn = false;
+	if (Math.random() > 0.05) {
+		isPlayerTurn = false;
 	}
 
 	// repeat and execute as long as the enemy-robot is alive
@@ -56,7 +56,7 @@ var fight = function (enemy) {
 				window.alert(enemy.name + " has died! ");
 
 				// award player money for winning
-				playMoney = playerInfo.money + 20;
+				playerInfo.money = playerInfo.money + 20;
 
 				// leave while() loop since enemy is dead
 				break;
